@@ -34,8 +34,29 @@ class _HomeViewState extends State<HomeView> {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeView()));// for page nav
               },
               leading: Icon(Icons.settings),
-              title: Text('Setting'),
-            )
+              title: Text('About'),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.pop(context);
+              },
+              leading: Icon(Icons.home),
+              title: Text('Skills'),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.pop(context);
+              },
+              leading: Icon(Icons.home),
+              title: Text('Projects'),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.pop(context);
+              },
+              leading: Icon(Icons.call),
+              title: Text('Contact'),
+            ),
           ],
         ),
       ),
