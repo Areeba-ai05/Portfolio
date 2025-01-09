@@ -61,7 +61,7 @@ class _HomeViewState extends State<HomeView> {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: AppColors.zincColor,
+        backgroundColor: AppColors.bacckgroundColor,
         title: Text('software_sprinkles',style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500),),
         actions: [
           TextButton(onPressed: () {}, child: Text('Home',style: TextStyle(fontSize: 18))),
@@ -81,11 +81,11 @@ class _HomeViewState extends State<HomeView> {
            height: 616,
            width: 1140,
            decoration: BoxDecoration(
-             color: AppColors.primaryColor
+             color:AppColors.darkpeachColor// Colors.blue,AppColors.bacckgroundColor
            ),
            child: Row(
              children: [
-               NormalTextWidget(text: 'Hi Everone,I am', textColor: AppColors.primaryColor2),
+               NormalTextWidget(text: 'Hi Everone,I am', textColor: AppColors.backgroundColor),
              ],
            ),
 
