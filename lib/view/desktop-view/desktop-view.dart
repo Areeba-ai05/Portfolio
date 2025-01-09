@@ -140,13 +140,15 @@ class _DesktopViewState extends State<DesktopView> {
                     right: 170,
                     bottom: 100,// Adjust horizontal alignment
                     child: Container(
-                      height: 700,
+                      height: 720,
                       width: 250,
                       decoration: BoxDecoration(color: AppColors.tealColor,
+                      //border:Border(),
                       borderRadius: BorderRadius.circular(15),
                         image: DecorationImage(
                             image: AssetImage('assets/App-images/homeimg.jpg'),
-                        fit: BoxFit.cover)
+                        fit: BoxFit.cover
+                          )
                       ),
                     ),
                   ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class AppColors{
-  static Color  primaryColor=Color(0xffFFFFFF);
+  static Color  primaryColor=Colors.yellow.withOpacity(0.5);
   static Color  bacckgroundColor=Color(0xffb8d9e1);
   //static Color  primaryColor2=Color(0x457B9D);
   static Color  backgroundColor=Color(0xff457B9D);
