@@ -82,7 +82,7 @@ class _DesktopViewState extends State<DesktopView> {
           ),
           Container(
             height: height*0.5,
-           width: width*2.9,
+           width: width*1.0,
             decoration: BoxDecoration(
                 color:AppColors.bacckgroundColor
             ),
