@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfoliowebsite/view/starting-view/startingview.dart';
+import 'package:portfoliowebsite/view/Responsive-layout.dart';
+//import 'package:portfoliowebsite/view/starting-view/startingview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeView()
+      home: ResposiveLayout()
       //const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
