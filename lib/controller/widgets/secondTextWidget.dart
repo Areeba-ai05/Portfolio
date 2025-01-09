@@ -8,6 +8,6 @@ class SecondTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: GoogleFonts.poppins(fontSize: 23,fontWeight: FontWeight.w400,color:textColor),);
+    return Text(text, style: GoogleFonts.poppins(fontSize: 18,fontWeight: FontWeight.w300,color:textColor),);
   }
 }

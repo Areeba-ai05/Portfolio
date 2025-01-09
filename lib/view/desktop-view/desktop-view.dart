@@ -115,10 +115,12 @@ class _DesktopViewState extends State<DesktopView> {
                       text: 'Hi Everyone, I am',
                       textColor: AppColors.backgroundColor,
                     ),
-                    SizedBox(height: 10), // Adjust spacing between the texts
+                    SizedBox(height: 2), // Adjust spacing between the texts
                     BlackTextHeading(text: 'Areeba Iqbal'),
-                    SizedBox(height: 10,),
-                    SecondTextWidget(text: 'Mobile app developer', textColor: AppColors.lightblackColor)
+                    SizedBox(height: 5,),
+                    SecondTextWidget(text: ' a passionate Android developer with expertise in Flutter and Dart.', textColor: AppColors.lightblackColor),
+                    SizedBox(height: 5,),
+                    SecondTextWidget(text: 'I create sleek, user-friendly apps that solve real-world problems.', textColor:AppColors.lightblackColor)
                   ],
                 ),
               ),
