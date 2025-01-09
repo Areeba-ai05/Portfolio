@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart';
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
+import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
 
 class DesktopView extends StatefulWidget {
   const DesktopView({super.key});
