@@ -123,6 +123,7 @@ class _DesktopViewState extends State<DesktopView> {
                     SecondTextWidget(text: 'I create sleek, user-friendly apps that solve real-world problems.', textColor:AppColors.lightblackColor)
                   ],
                 ),
+                child:Container()
               ),
             ),
 
