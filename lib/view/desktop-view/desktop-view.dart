@@ -10,9 +10,11 @@ class DesktopView extends StatefulWidget {
 }
 
 class _DesktopViewState extends State<DesktopView> {
-  double height=MediaQuery.of(context).size.height;
+
   @override
   Widget build(BuildContext context) {
+    double height=MediaQuery.of(context).size.height;
+    double width=MediaQuery.of(context).size.width;
     return Scaffold(
       drawer: Drawer(
         child: ListView(
@@ -79,14 +81,15 @@ class _DesktopViewState extends State<DesktopView> {
             thickness: 2,
           ),
           Container(
-            height: height*0.9,
-            width: 1140,
+            height: height*0.5,
+           width: width*2.9,
             decoration: BoxDecoration(
                 color:AppColors.bacckgroundColor
             ),
             child: Row(
               children: [
                 NormalTextWidget(text: 'Hi Everone,I am', textColor: AppColors.backgroundColor),
+
               ],
             ),
 
