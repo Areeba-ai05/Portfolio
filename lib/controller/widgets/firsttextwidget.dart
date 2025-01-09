@@ -8,6 +8,6 @@ class NormalTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: GoogleFonts.poppins(fontSize: 13,fontWeight: FontWeight.w500,color:textColor),);
+    return Text(text, style: GoogleFonts.poppins(fontSize: 23,fontWeight: FontWeight.w600,color:textColor),);
   }
 }

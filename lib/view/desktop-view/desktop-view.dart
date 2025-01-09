@@ -10,51 +10,55 @@ class DesktopView extends StatefulWidget {
 }
 
 class _DesktopViewState extends State<DesktopView> {
-
   @override
   Widget build(BuildContext context) {
-    double height=MediaQuery.of(context).size.height;
-    double width=MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       drawer: Drawer(
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color: Colors.brown),//for chaning background color
+              decoration: BoxDecoration(color: Colors.brown), // Change background color
               currentAccountPicture: CircleAvatar(),
               accountName: Text('Areeba Iqbal'),
-              accountEmail: Text('areeba.seo05@gmail.com'),),
+              accountEmail: Text('areeba.seo05@gmail.com'),
+            ),
             ListTile(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
               },
               leading: Icon(Icons.home),
               title: Text('Home'),
             ),
             ListTile(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>DesktopView()));// for page nav
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DesktopView()),
+                ); // Page navigation
               },
               leading: Icon(Icons.settings),
               title: Text('About'),
             ),
             ListTile(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
               },
               leading: Icon(Icons.home),
               title: Text('Skills'),
             ),
             ListTile(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
               },
               leading: Icon(Icons.home),
               title: Text('Projects'),
             ),
             ListTile(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
               },
               leading: Icon(Icons.call),
@@ -65,36 +69,51 @@ class _DesktopViewState extends State<DesktopView> {
       ),
       appBar: AppBar(
         backgroundColor: AppColors.bacckgroundColor,
-        title: Text('software_sprinkles',style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500),),
+        title: Text(
+          'software_sprinkles',
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
+        ),
         actions: [
-          TextButton(onPressed: () {}, child: Text('Home',style: TextStyle(fontSize: 18))),
-          TextButton(onPressed: () {}, child: Text('About',style: TextStyle(fontSize: 18))),
-          TextButton(onPressed: () {}, child: Text('Skills',style: TextStyle(fontSize: 18))),
-          TextButton(onPressed: () {}, child: Text('Projects',style: TextStyle(fontSize: 18))),
-          TextButton(onPressed: () {}, child: Text('Contact',style: TextStyle(fontSize: 18))),
+          TextButton(
+              onPressed: () {}, child: Text('Home', style: TextStyle(fontSize: 18))),
+          TextButton(
+              onPressed: () {}, child: Text('About', style: TextStyle(fontSize: 18))),
+          TextButton(
+              onPressed: () {}, child: Text('Skills', style: TextStyle(fontSize: 18))),
+          TextButton(
+              onPressed: () {}, child: Text('Projects', style: TextStyle(fontSize: 18))),
+          TextButton(
+              onPressed: () {}, child: Text('Contact', style: TextStyle(fontSize: 18))),
         ],
-      ),
-      body: Column(
-        children: [
-          Divider(
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(2),
+          child: Divider(
             color: Colors.grey,
             thickness: 2,
+            height: 2,
           ),
-          Container(
-            height: height*0.5,
-           width: width*1.0,
-            decoration: BoxDecoration(
-                color:AppColors.bacckgroundColor
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: height * 0.5,
+              width: width,
+              decoration: BoxDecoration(
+                color: AppColors.bacckgroundColor,
+              ),
+              child: Row(
+                children: [
+                  NormalTextWidget(
+                    text: 'Hi Everyone, I am',
+                    textColor: AppColors.backgroundColor,
+                  ),
+                ],
+              ),
             ),
-            child: Row(
-              children: [
-                NormalTextWidget(text: 'Hi Everone,I am', textColor: AppColors.backgroundColor),
-
-              ],
-            ),
-
-          )
-        ],
+          ],
+        ),
       ),
     );
   }
