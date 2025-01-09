@@ -143,7 +143,9 @@ class _DesktopViewState extends State<DesktopView> {
                       height: 700,
                       width: 250,
                       decoration: BoxDecoration(color: AppColors.tealColor,
-                      borderRadius: BorderRadius.circular(15)),
+                      borderRadius: BorderRadius.circular(15),
+                        image: DecorationImage(image: AssetImage('assets/img1'))
+                      ),
                     ),
                   ),
                 ],
