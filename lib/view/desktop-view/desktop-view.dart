@@ -90,7 +90,7 @@ class _DesktopViewState extends State<DesktopView> {
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(2),
           child: Divider(
-            color: Colors.grey,
+            color: Colors.black,
             thickness: 2,
             height: 2,
           ),
@@ -138,17 +138,16 @@ class _DesktopViewState extends State<DesktopView> {
                     //top: height* 0.9,//Adjust this value for vertical alignment
                      top:50,
                     right: 170,
-                    bottom: 100,// Adjust horizontal alignment
+                    bottom: 70,// Adjust horizontal alignment
                     child: Container(
-                      height: 720,
-                      width: 250,
+                      height: 790,
+                      width: 300,
                       decoration: BoxDecoration(color: AppColors.tealColor,
                       //border:Border(),
                       borderRadius: BorderRadius.circular(15),
                         image: DecorationImage(
                             image: AssetImage('assets/App-images/homeimg.jpg'),
-                        fit: BoxFit.cover
-                          )
+                        fit: BoxFit.cover)
                       ),
                     ),
                   ),
@@ -157,11 +156,99 @@ class _DesktopViewState extends State<DesktopView> {
             ),
             Container(
               height: height * 0.5,
-              width: width * 1.0,
+              width: width * 1.0, // Adjusted width for proper scaling
               decoration: BoxDecoration(
                 color: AppColors.primaryColor,
               ),
-            )
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70.0, top: 10),
+                    child: Container(
+                      height: 340,
+                      width: 450,
+                      decoration: BoxDecoration(
+                        color: AppColors.primaryColor,
+                        borderRadius: BorderRadius.circular(15),
+                        image: DecorationImage(
+                          image: AssetImage('assets/App-images/img1.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 50, // Align the text with the image container
+                    left: 690, // Positioned to the right of the image container
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        NormalTextWidget(
+                          text: 'About',
+                          textColor: AppColors.backgroundColor,
+                        ),
+                        SizedBox(height: 2),
+                        BlackTextHeading(text: 'About Me?'),
+                        SizedBox(height: 5),
+                        SecondTextWidget(
+                          text:
+                          ' A passionate Android developer with expertise in Flutter and Dart.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text:
+                          'Crafting seamless mobile experiences is my passion!   ',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text:
+                          'As an Android developer skilled in Flutter and Dart,',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text:
+                          ' I turn ideas into sleek, high-performing apps. From intuitive UIs to scalable solutions,.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text:
+                          'I bring innovation to every project. Check out my work to see the difference!.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text:
+                          'Whether it’s building a complex layout like a Facebook clone or debugging intricate issues,',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text:
+                          ' I thrive on solving challenges and delivering quality results.',
+                          textColor: AppColors.lightblackColor,
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        Container(
+          height: height * 0.5,
+          width: width * 1.0, // Adjusted width for proper scaling
+          decoration: BoxDecoration(
+            color: AppColors.bacckgroundColor,
+          ),
+          child: Column(
+            children:[
+              Padding(
+                padding: const EdgeInsets.only(top: 18.0),
+                child: SecondTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
+              ),
+              SizedBox(height: 05,),
+              BlackTextHeading(text: 'My Expertise')
+            ],
+          ),
+        ),
           ],
         ),
       ),
