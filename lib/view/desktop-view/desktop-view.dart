@@ -22,7 +22,7 @@ class _DesktopViewState extends State<DesktopView> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color: Colors.brown), // Change background color
+              decoration: BoxDecoration(color: Colors.brown),
               currentAccountPicture: CircleAvatar(),
               accountName: Text('Areeba Iqbal'),
               accountEmail: Text('areeba.seo05@gmail.com'),
@@ -40,7 +40,7 @@ class _DesktopViewState extends State<DesktopView> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => DesktopView()),
-                ); // Page navigation
+                );
               },
               leading: Icon(Icons.settings),
               title: Text('About'),
@@ -77,15 +77,15 @@ class _DesktopViewState extends State<DesktopView> {
         ),
         actions: [
           TextButton(
-              onPressed: () {}, child: Text('Home', style: TextStyle(fontSize: 18,color: Colors.black))),
+              onPressed: () {}, child: Text('Home', style: TextStyle(fontSize: 18, color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('About', style: TextStyle(fontSize: 18,color: Colors.black))),
+              onPressed: () {}, child: Text('About', style: TextStyle(fontSize: 18, color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('Skills', style: TextStyle(fontSize: 18,color: Colors.black))),
+              onPressed: () {}, child: Text('Skills', style: TextStyle(fontSize: 18, color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('Projects', style: TextStyle(fontSize: 18,color: Colors.black))),
+              onPressed: () {}, child: Text('Projects', style: TextStyle(fontSize: 18, color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('Contact', style: TextStyle(fontSize: 18,color: Colors.black))),
+              onPressed: () {}, child: Text('Contact', style: TextStyle(fontSize: 18, color: Colors.black))),
         ],
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(2),
@@ -101,32 +101,54 @@ class _DesktopViewState extends State<DesktopView> {
           children: [
             Container(
               height: height * 0.5,
-              width: width,
+              width: width * 1.0,
               decoration: BoxDecoration(
                 color: AppColors.bacckgroundColor,
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 100.0, top:30),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    NormalTextWidget(
-                      text: 'Hi Everyone, I am',
-                      textColor: AppColors.backgroundColor,
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70.0, top: 90),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        NormalTextWidget(
+                          text: 'Hi Everyone, I am',
+                          textColor: AppColors.backgroundColor,
+                        ),
+                        SizedBox(height: 2),
+                        BlackTextHeading(text: 'Areeba Iqbal'),
+                        SizedBox(height: 5),
+                        SecondTextWidget(
+                          text:
+                          ' a passionate Android developer with expertise in Flutter and Dart.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SizedBox(height: 7),
+                        SecondTextWidget(
+                          text:
+                          'I create sleek, user-friendly apps that solve real-world problems.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 2), // Adjust spacing between the texts
-                    BlackTextHeading(text: 'Areeba Iqbal'),
-                    SizedBox(height: 5,),
-                    SecondTextWidget(text: ' a passionate Android developer with expertise in Flutter and Dart.', textColor: AppColors.lightblackColor),
-                    SizedBox(height: 5,),
-                    SecondTextWidget(text: 'I create sleek, user-friendly apps that solve real-world problems.', textColor:AppColors.lightblackColor)
-                  ],
-                ),
-                child:Container()
+                  ),
+                  Positioned(
+                    //top: height* 0.9,//Adjust this value for vertical alignment
+                     top:50,
+                    right: 170,
+                    bottom: 100,// Adjust horizontal alignment
+                    child: Container(
+                      height: 700,
+                      width: 250,
+                      decoration: BoxDecoration(color: AppColors.tealColor,
+                      borderRadius: BorderRadius.circular(15)),
+                    ),
+                  ),
+                ],
               ),
             ),
-
           ],
         ),
       ),
