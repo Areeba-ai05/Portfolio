@@ -9,8 +9,8 @@ class BlackTextHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(text,style: GoogleFonts.poppins(
       color: AppColors.blackColor,
-      fontSize: 20,
-      fontWeight: FontWeight.w500,
+      fontSize: 26,
+      fontWeight: FontWeight.w600,
     ),);
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart';
-import 'package:portfoliowebsite/controller/widgets/firsttextwidget.dart';
+import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
+import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
 
 class DesktopView extends StatefulWidget {
   const DesktopView({super.key});
@@ -75,15 +76,15 @@ class _DesktopViewState extends State<DesktopView> {
         ),
         actions: [
           TextButton(
-              onPressed: () {}, child: Text('Home', style: TextStyle(fontSize: 18))),
+              onPressed: () {}, child: Text('Home', style: TextStyle(fontSize: 18,color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('About', style: TextStyle(fontSize: 18))),
+              onPressed: () {}, child: Text('About', style: TextStyle(fontSize: 18,color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('Skills', style: TextStyle(fontSize: 18))),
+              onPressed: () {}, child: Text('Skills', style: TextStyle(fontSize: 18,color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('Projects', style: TextStyle(fontSize: 18))),
+              onPressed: () {}, child: Text('Projects', style: TextStyle(fontSize: 18,color: Colors.black))),
           TextButton(
-              onPressed: () {}, child: Text('Contact', style: TextStyle(fontSize: 18))),
+              onPressed: () {}, child: Text('Contact', style: TextStyle(fontSize: 18,color: Colors.black))),
         ],
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(2),
@@ -103,15 +104,25 @@ class _DesktopViewState extends State<DesktopView> {
               decoration: BoxDecoration(
                 color: AppColors.bacckgroundColor,
               ),
-              child: Row(
-                children: [
-                  NormalTextWidget(
-                    text: 'Hi Everyone, I am',
-                    textColor: AppColors.backgroundColor,
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 100.0, top:30),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    NormalTextWidget(
+                      text: 'Hi Everyone, I am',
+                      textColor: AppColors.backgroundColor,
+                    ),
+                    SizedBox(height: 10), // Adjust spacing between the texts
+                    BlackTextHeading(text: 'Areeba Iqbal'),
+                    SizedBox(height: 10,),
+                    SecondTextWidget(text: 'Mobile app developer', textColor: AppColors.lightblackColor)
+                  ],
+                ),
               ),
             ),
+
           ],
         ),
       ),
