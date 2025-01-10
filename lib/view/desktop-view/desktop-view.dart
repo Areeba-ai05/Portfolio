@@ -432,7 +432,7 @@ class _DesktopViewState extends State<DesktopView> {
                   SizedBox(height: 02,),
                   BlackTextHeading(text: 'What I have made?'),
                  Padding(
-                   padding: const EdgeInsets.only(left: 8.0,top:20),//container padding
+                   padding: const EdgeInsets.only(left:28.0,top:20),//container padding
                    child: Row(
                      children: [
                        Container(
@@ -447,7 +447,16 @@ class _DesktopViewState extends State<DesktopView> {
                          Padding(
                          padding: const EdgeInsets.only(top: 5.0),
                          child: Container(
-
+                             height:180,
+                             width: 280,
+                             decoration: BoxDecoration(
+                               borderRadius: BorderRadius.circular(10.67),
+                               color:AppColors.bacckgroundColor,
+                               image: DecorationImage(
+                                 image: AssetImage('assets/App-images/fb.jpg',),
+                                 fit: BoxFit.cover,
+                               ),
+                             )
                          ),
                          )
                            ],

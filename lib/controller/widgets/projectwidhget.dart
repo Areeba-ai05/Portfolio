@@ -3,7 +3,7 @@ import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart'
 
 class ProjectWidget extends StatelessWidget {
   String Image;
-   ProjectWidget({super.key, required this.Iamge});
+   ProjectWidget({super.key, required this.Image});
 
   @override
   Widget build(BuildContext context) {
