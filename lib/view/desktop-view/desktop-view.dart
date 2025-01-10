@@ -245,21 +245,61 @@ class _DesktopViewState extends State<DesktopView> {
                 padding: const EdgeInsets.only(top: 68.0),
                 child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
               ),
-              SizedBox(height: 05,),
-              BlackTextHeading(text: 'My Expertise'),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 28.0),
-                    child: Container(
-                      height: 200 ,
-                      width: 200,
+              SizedBox(height: 02,),
+              BlackTextHeading(text: 'What I am capable of?'),
+              Padding(
+                padding: const EdgeInsets.only(left:50.0,top: 70),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 300 ,
+                      width: 300,
                       decoration: BoxDecoration(
-                        color: AppColors.whiteColor
+                        color: AppColors.pcolor2,
+                        borderRadius: BorderRadius.circular(10.67),
+                      ),
+                      child: Column(
+
                       ),
                     ),
-                  )
-                ],
+                    SizedBox(width:10),
+                    Container(
+                      height: 300 ,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: AppColors.pcolor2,
+                        borderRadius: BorderRadius.circular(10.67),
+                      ),
+                      child: Column(
+
+                      ),
+                    ),
+                    SizedBox(width:10),
+                    Container(
+                      height: 300 ,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: AppColors.pcolor2,
+                        borderRadius: BorderRadius.circular(10.67),
+                      ),
+                      child: Column(
+
+                      ),
+                    ),
+                    SizedBox(width:10),
+                    Container(
+                      height: 300 ,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: AppColors.pcolor2,
+                        borderRadius: BorderRadius.circular(10.67),
+                      ),
+                      child: Column(
+
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
