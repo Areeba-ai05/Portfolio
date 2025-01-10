@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart';
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
+import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
 
@@ -253,7 +254,7 @@ class _DesktopViewState extends State<DesktopView> {
                   children: [
                     Container(
                       height: 300 ,
-                      width: 300,
+                      width: 350,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
@@ -274,45 +275,117 @@ class _DesktopViewState extends State<DesktopView> {
                           ),
                         ),
                         BlackTextHeading(text: 'Dart Programming'),
-                        SecondTextWidget(text: 'Dart is a fast and flexible programming language designed for modern app development', textColor: AppColors.lightblackColor),
-                        SecondTextWidget(text: 'Write clean, efficient code for mobile, web, and beyond', textColor: AppColors.lightblackColor)
+                        SizedBox(height:10),
+                        DescriptionTextWidget(text: 'I specialize in Dart, a fast and powerful programming language designed for modern app development.', textColor: AppColors.lightblackColor),
+                        SizedBox(height:8),
+                        DescriptionTextWidget(text: 'Dart makes writing clean and efficient code effortless.Whether it’s for mobile, web, or desktop, ', textColor: AppColors.lightblackColor),
+                        SizedBox(height:8),
+                        DescriptionTextWidget(text: 'I use Dart to create seamless and reliable solutions.  ', textColor: AppColors.lightblackColor),
+                        SizedBox(height:8),
+                        DescriptionTextWidget(text: ' Whether for mobile, web, or desktop, Dart gets the job done efficiently.', textColor: AppColors.lightblackColor)
                       ],
                       ),
                     ),
                     SizedBox(width:10),
                     Container(
                       height: 300 ,
-                      width: 300,
+                      width: 350,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
-
+                        children: [
+                          Container(
+                            height:80,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.67),
+                              color:AppColors.bacckgroundColor,
+                              image: DecorationImage(
+                                image: AssetImage('assets/App-images/flutter-logo.png',),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          BlackTextHeading(text: 'Flutter'),
+                          SizedBox(height:10),
+                          DescriptionTextWidget(text: 'I am highly skilled in Flutter, Google’s revolutionary UI toolkit for creating cross-platform apps.',textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: ' I specialize in delivering pixel-perfect designs with smooth animations and native performance.', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: 'Using a single codebase, I build apps for mobile, web, and desktop with consistent quality.  ', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: 'My expertise ensures fast development and exceptional user experiences. ', textColor: AppColors.lightblackColor)
+                        ],
                       ),
                     ),
                     SizedBox(width:10),
                     Container(
                       height: 300 ,
-                      width: 300,
+                      width: 350,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
-
+                        children: [
+                          Container(
+                            height:80,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.67),
+                              color:AppColors.bacckgroundColor,
+                              image: DecorationImage(
+                                image: AssetImage('assets/App-images/firebase2.png',),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          BlackTextHeading(text: 'FireBase'),
+                          SizedBox(height:10),
+                          DescriptionTextWidget(text: 'I have a foundational understanding of Firebase, Google’s powerful backend-as-a-service platform.',textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: ' I can integrate real-time databases, basic authentication, and cloud storage into applications.', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: 'With Firebase, I simplify backend tasks to enhance app functionality and deliver a smoother user experience.', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: 'I’m also familiar with Firebase’s analytics and push notification features.It helps me delivering feature-rich, scalable, and easily manageable apps', textColor: AppColors.lightblackColor)
+                        ],
                       ),
                     ),
                     SizedBox(width:10),
                     Container(
                       height: 300 ,
-                      width: 300,
+                      width: 350,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
-
+                        children: [
+                          Container(
+                            height:80,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.67),
+                              color:AppColors.bacckgroundColor,
+                              image: DecorationImage(
+                                image: AssetImage('assets/App-images/flutter-logo.png',),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          BlackTextHeading(text: 'Flutter'),
+                          SizedBox(height:10),
+                          DescriptionTextWidget(text: 'I am highly skilled in Flutter, Google’s revolutionary UI toolkit for creating cross-platform apps.',textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: ' I specialize in delivering pixel-perfect designs with smooth animations and native performance.', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: 'Using a single codebase, I build apps for mobile, web, and desktop with consistent quality.  ', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text: 'My expertise ensures fast development and exceptional user experiences. ', textColor: AppColors.lightblackColor)
+                        ],
                       ),
                     )
                   ],

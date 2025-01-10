@@ -12,7 +12,5 @@ class AppColors{
   static Color  secondaryColor2=Color(0xffF28F8F);//peach
   static Color  zincColor=Color(0xff263238);
   static Color  tealColor=Color(0xff455A64);
-  static Color  peachColor=Color(0xffFFA8A7);
-  static Color  darkpeachColor=Color(0xffF28F8F);
 
 }

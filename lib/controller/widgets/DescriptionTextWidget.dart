@@ -9,8 +9,8 @@ class DescriptionTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FittedBox(child: Padding(
-      padding: const EdgeInsets.only(left: 8.0,right: 8.0),
-      child: Text(text, style: GoogleFonts.poppins(fontSize: 23,fontWeight: FontWeight.w300,color:textColor),),
+      padding: const EdgeInsets.only(left: 2.0,right: 2.0),
+      child: Text(text, style: GoogleFonts.poppins(fontSize: 27,fontWeight: FontWeight.w600,color:textColor),),
     ));
   }
 }
