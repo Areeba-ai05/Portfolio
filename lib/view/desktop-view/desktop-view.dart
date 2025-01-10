@@ -259,15 +259,23 @@ class _DesktopViewState extends State<DesktopView> {
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
+                       // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Container(
                           height:80,
                           width: 80,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.67),
-                                color:AppColors.primaryColor
+                                color:AppColors.bacckgroundColor,
+                            image: DecorationImage(
+                              image: AssetImage('assets/App-images/dartlogo.jpg',),
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        )
+                        ),
+                        BlackTextHeading(text: 'Dart Programming'),
+                        SecondTextWidget(text: 'Dart is a fast and flexible programming language designed for modern app development', textColor: AppColors.lightblackColor),
+                        SecondTextWidget(text: 'Write clean, efficient code for mobile, web, and beyond', textColor: AppColors.lightblackColor)
                       ],
                       ),
                     ),
