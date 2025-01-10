@@ -282,9 +282,9 @@ class _DesktopViewState extends State<DesktopView> {
                         SizedBox(height:8),
                         DescriptionTextWidget(text: 'I specialize in Dart, a powerful language for modern app development', textColor: AppColors.lightblackColor),
                         SizedBox(height:8),
-                        DescriptionTextWidget(text: 'Dart allows me to write clean, efficient code for high-performance apps. ', textColor: AppColors.lightblackColor),
+                        DescriptionTextWidget(text: 'Dart allows me to write clean, efficient code for high-performance apps.', textColor: AppColors.lightblackColor),
                         SizedBox(height:8),
-                        DescriptionTextWidget(text: ' Whether for mobile, web, or desktop, I create seamless, reliable solutions. ', textColor: AppColors.lightblackColor),
+                        DescriptionTextWidget(text: ' Whether for mobile, web, or desktop, I create seamless, reliable solutions.', textColor: AppColors.lightblackColor),
                         SizedBox(height:8),
                         DescriptionTextWidget(text: ' Its strong integration with Flutter ensures smooth cross-platform development.', textColor: AppColors.lightblackColor)
                       ],
@@ -432,7 +432,7 @@ class _DesktopViewState extends State<DesktopView> {
                   SizedBox(height: 02,),
                   BlackTextHeading(text: 'What I have made?'),
                  Padding(
-                   padding: const EdgeInsets.only(left:28.0,top:20),//container padding
+                   padding: const EdgeInsets.only(left:280.0,top:20,),//container padding
                    child: Row(
                      children: [
                        Container(
@@ -447,7 +447,7 @@ class _DesktopViewState extends State<DesktopView> {
                          Padding(
                          padding: const EdgeInsets.only(top: 5.0),
                          child: Container(
-                             height:180,
+                             height:200,
                              width: 280,
                              decoration: BoxDecoration(
                                borderRadius: BorderRadius.circular(10.67),
@@ -456,15 +456,86 @@ class _DesktopViewState extends State<DesktopView> {
                                  image: AssetImage('assets/App-images/fb.jpg',),
                                  fit: BoxFit.cover,
                                ),
-                             )
+                             ),
                          ),
-                         )
+                         ),
+                             Divider(color: Colors.black,
+                                 thickness: 2,
+                                 height: 2),
+                            SizedBox(height: 10,),
+                            NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
+                           ],
+                         ),
+                       ),
+                       SizedBox(width:30 ,),
+                       Container(
+                         height: 250 ,
+                         width: 300,
+                         decoration: BoxDecoration(
+                           color: AppColors.bacckgroundColor,
+                           borderRadius: BorderRadius.circular(10.67),
+                         ),
+                         child: Column(
+                           children: [
+                             Padding(
+                               padding: const EdgeInsets.only(top: 5.0),
+                               child: Container(
+                                 height:200,
+                                 width: 280,
+                                 decoration: BoxDecoration(
+                                   borderRadius: BorderRadius.circular(10.67),
+                                   color:AppColors.bacckgroundColor,
+                                   image: DecorationImage(
+                                     image: AssetImage('assets/App-images/fb.jpg',),
+                                     fit: BoxFit.cover,
+                                   ),
+                                 ),
+                               ),
+                             ),
+                             Divider(color: Colors.black,
+                                 thickness: 2,
+                                 height: 2),
+                             SizedBox(height: 10,),
+                             NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
+                           ],
+                         ),
+                       ),
+                       SizedBox(width:30 ,),
+                       Container(
+                         height: 250 ,
+                         width: 300,
+                         decoration: BoxDecoration(
+                           color: AppColors.bacckgroundColor,
+                           borderRadius: BorderRadius.circular(10.67),
+                         ),
+                         child: Column(
+                           children: [
+                             Padding(
+                               padding: const EdgeInsets.only(top: 5.0),
+                               child: Container(
+                                 height:200,
+                                 width: 280,
+                                 decoration: BoxDecoration(
+                                   borderRadius: BorderRadius.circular(10.67),
+                                   color:AppColors.bacckgroundColor,
+                                   image: DecorationImage(
+                                     image: AssetImage('assets/App-images/fb.jpg',),
+                                     fit: BoxFit.cover,
+                                   ),
+                                 ),
+                               ),
+                             ),
+                             Divider(color: Colors.black,
+                                 thickness: 2,
+                                 height: 2),
+                             SizedBox(height: 10,),
+                             NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
                            ],
                          ),
                        )
                      ],
                    ),
-                 )
+                 ),
                 ],
               ),
             )
