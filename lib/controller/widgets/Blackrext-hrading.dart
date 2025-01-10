@@ -7,11 +7,13 @@ class BlackTextHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,style: GoogleFonts.poppins(
-      color: AppColors.blackColor,
-      fontSize: 26,
-      fontWeight: FontWeight.w600,
-    ),);
+    return FittedBox(
+      child: Text(text,style: GoogleFonts.poppins(
+        color: AppColors.blackColor,
+        fontSize: 26,
+        fontWeight: FontWeight.w600,
+      ),),
+    );
   }
 }
 

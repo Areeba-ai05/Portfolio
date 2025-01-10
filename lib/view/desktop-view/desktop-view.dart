@@ -100,7 +100,7 @@ class _DesktopViewState extends State<DesktopView> {
         child: Column(
           children: [
             Container(
-              height: height * 0.5,
+              height: height * 0.9,
               width: width * 1.0,
               decoration: BoxDecoration(
                 color: AppColors.bacckgroundColor,
@@ -108,7 +108,7 @@ class _DesktopViewState extends State<DesktopView> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 70.0, top: 90),
+                    padding: const EdgeInsets.only(left: 70.0, top: 200),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -141,7 +141,7 @@ class _DesktopViewState extends State<DesktopView> {
                     bottom: 70,// Adjust horizontal alignment
                     child: Container(
                       height: 790,
-                      width: 300,
+                      width: 370,
                       decoration: BoxDecoration(color: AppColors.tealColor,
                       //border:Border(),
                       borderRadius: BorderRadius.circular(15),
@@ -155,7 +155,7 @@ class _DesktopViewState extends State<DesktopView> {
               ),
             ),
             Container(
-              height: height * 0.5,
+              height: height * 0.9,
               width: width * 1.0, // Adjusted width for proper scaling
               decoration: BoxDecoration(
                 color: AppColors.primaryColor,
@@ -233,7 +233,7 @@ class _DesktopViewState extends State<DesktopView> {
               ),
             ),
         Container(
-          height: height * 0.5,
+          height: height * 0.9,
           width: width * 1.0, // Adjusted width for proper scaling
           decoration: BoxDecoration(
             color: AppColors.bacckgroundColor,
@@ -242,7 +242,7 @@ class _DesktopViewState extends State<DesktopView> {
             children:[
               Padding(
                 padding: const EdgeInsets.only(top: 18.0),
-                child: SecondTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
+                child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
               ),
               SizedBox(height: 05,),
               BlackTextHeading(text: 'My Expertise')
