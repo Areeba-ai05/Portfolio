@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart';
+import 'package:portfoliowebsite/controller/contants/app-images/app-images.dart';
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
 import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
@@ -262,15 +263,18 @@ class _DesktopViewState extends State<DesktopView> {
                       child: Column(
                        // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Container(
-                          height:80,
-                          width: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.67),
-                                color:AppColors.bacckgroundColor,
-                            image: DecorationImage(
-                              image: AssetImage('assets/App-images/dartlogo2.png',),
-                              fit: BoxFit.cover,
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: Container(
+                            height:80,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10.67),
+                                  color:AppColors.bacckgroundColor,
+                              image: DecorationImage(
+                                image: AssetImage('assets/App-images/dartlogo2.png',),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
@@ -367,18 +371,7 @@ class _DesktopViewState extends State<DesktopView> {
                       ),
                       child: Column(
                         children: [
-                          Container(
-                            height:80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.67),
-                              color:AppColors.bacckgroundColor,
-                              image: DecorationImage(
-                                image: AssetImage('assets/App-images/logoui4.png',),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
+                          AppImages(Image:'assets/App-images/logoui4.png' ),
                           SizedBox(height:10),
                           BlackTextHeading(text: 'UI/UX Design'),
                           SizedBox(height:10),

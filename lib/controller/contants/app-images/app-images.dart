@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart';
 
 class AppImages extends StatelessWidget {
-  const AppImages({super.key});
+  String Image;
+   AppImages({super.key, required this.Image});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class AppImages extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.67),
           color:AppColors.bacckgroundColor,
           image: DecorationImage(
-            image: AssetImage('assets/App-images/logoui4.png',),
+            image: AssetImage(Image),
             fit: BoxFit.cover,
           ),
         ),
