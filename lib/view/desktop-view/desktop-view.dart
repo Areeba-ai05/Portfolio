@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart';
-import 'package:portfoliowebsite/controller/contants/app-images/app-images.dart';
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
 import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
@@ -244,18 +243,18 @@ class _DesktopViewState extends State<DesktopView> {
           child: Column(
             children:[
               Padding(
-                padding: const EdgeInsets.only(top: 68.0),
+                padding: const EdgeInsets.only(left:40,top: 38.0),
                 child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
               ),
               SizedBox(height: 02,),
               BlackTextHeading(text: 'What I am capable of?'),
               Padding(
-                padding: const EdgeInsets.only(left:50.0,top: 70),
+                padding: const EdgeInsets.only(left:400.0,top: 30),
                 child: Row(
                   children: [
                     Container(
-                      height: 300 ,
-                      width: 350,
+                      height: 230 ,
+                      width: 400,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
@@ -264,7 +263,7 @@ class _DesktopViewState extends State<DesktopView> {
                        // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
+                          padding: const EdgeInsets.only(top: 5.0),
                           child: Container(
                             height:80,
                             width: 80,
@@ -278,79 +277,91 @@ class _DesktopViewState extends State<DesktopView> {
                             ),
                           ),
                         ),
-                        SizedBox(height:10),
+                        SizedBox(height:5),
                         BlackTextHeading(text: 'Dart Programming'),
-                        SizedBox(height:10),
-                        DescriptionTextWidget(text: 'I specialize in Dart, a fast and powerful programming language designed for modern app development.', textColor: AppColors.lightblackColor),
                         SizedBox(height:8),
-                        DescriptionTextWidget(text: 'Dart makes writing clean and efficient code effortless.Whether it’s for mobile, web, or desktop, ', textColor: AppColors.lightblackColor),
+                        DescriptionTextWidget(text: 'I specialize in Dart, a powerful language for modern app development', textColor: AppColors.lightblackColor),
                         SizedBox(height:8),
-                        DescriptionTextWidget(text: 'I use Dart to create seamless and reliable solutions.  ', textColor: AppColors.lightblackColor),
+                        DescriptionTextWidget(text: 'Dart allows me to write clean, efficient code for high-performance apps. ', textColor: AppColors.lightblackColor),
                         SizedBox(height:8),
-                        DescriptionTextWidget(text: ' Whether for mobile, web, or desktop, Dart gets the job done efficiently.', textColor: AppColors.lightblackColor)
+                        DescriptionTextWidget(text: ' Whether for mobile, web, or desktop, I create seamless, reliable solutions. ', textColor: AppColors.lightblackColor),
+                        SizedBox(height:8),
+                        DescriptionTextWidget(text: ' Its strong integration with Flutter ensures smooth cross-platform development.', textColor: AppColors.lightblackColor)
                       ],
                       ),
                     ),
-                    SizedBox(width:10),
+                    SizedBox(width:50),
                     Container(
-                      height: 300 ,
-                      width: 350,
+                      height: 230 ,
+                      width: 400,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
                         children: [
-                          Container(
-                            height:80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.67),
-                              color:AppColors.bacckgroundColor,
-                              image: DecorationImage(
-                                image: AssetImage('assets/App-images/flutter2.png',),
-                                fit: BoxFit.cover,
+                          Padding(
+                            padding: const EdgeInsets.only(top:5.0),
+                            child: Container(
+                              height:80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.67),
+                                color:AppColors.bacckgroundColor,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/App-images/flutter2.png',),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
-                          SizedBox(height:10),
+                          SizedBox(height:5),
                           BlackTextHeading(text: 'Flutter'),
-                          SizedBox(height:10),
-                          DescriptionTextWidget(text: 'I am highly skilled in Flutter, Google’s revolutionary UI toolkit for creating cross-platform apps.',textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: ' I specialize in delivering pixel-perfect designs with smooth animations and native performance.', textColor: AppColors.lightblackColor),
+                          DescriptionTextWidget(text:'Flutter is a powerful toolkit for creating stunning, natively compiled apps.',textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: 'Using a single codebase, I build apps for mobile, web, and desktop with consistent quality.  ', textColor: AppColors.lightblackColor),
+                          DescriptionTextWidget(text:'It allows me to develop apps for mobile, web, and desktop from a single codebase.', textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: 'My expertise ensures fast development and exceptional user experiences. ', textColor: AppColors.lightblackColor)
+                          DescriptionTextWidget(text:' Flutter ensures smooth performance with pixel-perfect designs.', textColor: AppColors.lightblackColor),
+                          SizedBox(height:8),
+                          DescriptionTextWidget(text:' I craft beautiful, high-performance apps using Flutter', textColor: AppColors.lightblackColor)
                         ],
                       ),
                     ),
-                    SizedBox(width:10),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left:400, top:30),
+                child: Row(
+                  children: [
                     Container(
-                      height: 300 ,
-                      width: 350,
+                      height: 230 ,
+                      width:400,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
                         children: [
-                          Container(
-                            height:80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.67),
-                              color:AppColors.bacckgroundColor,
-                              image: DecorationImage(
-                                image: AssetImage('assets/App-images/firebase2.png',),
-                                fit: BoxFit.cover,
+                          Padding(
+                            padding: const EdgeInsets.only(top:5.0),
+                            child: Container(
+                              height:80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.67),
+                                color:AppColors.bacckgroundColor,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/App-images/firebase2.png',),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
-                          SizedBox(height:10),
+                          SizedBox(height:5),
                           BlackTextHeading(text: 'FireBase'),
-                          SizedBox(height:10),
+                          SizedBox(height:8),
                           DescriptionTextWidget(text: 'I have a foundational understanding of Firebase, Google’s powerful backend-as-a-service platform.',textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
                           DescriptionTextWidget(text: ' I can integrate real-time databases, basic authentication, and cloud storage into applications.', textColor: AppColors.lightblackColor),
@@ -361,20 +372,35 @@ class _DesktopViewState extends State<DesktopView> {
                         ],
                       ),
                     ),
-                    SizedBox(width:10),
+
+                    SizedBox(width:50),
                     Container(
-                      height: 300 ,
-                      width: 350,
+                      height: 230 ,
+                      width: 400,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
                         children: [
-                          AppImages(Image:'assets/App-images/logoui4.png' ),
-                          SizedBox(height:10),
+                          Padding(
+                            padding: const EdgeInsets.only(top:5.0),
+                            child: Container(
+                              height:80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.67),
+                                color:AppColors.bacckgroundColor,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/App-images/firebase2.png',),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height:5),
                           BlackTextHeading(text: 'UI/UX Design'),
-                          SizedBox(height:10),
+                          SizedBox(height:8),
                           DescriptionTextWidget(text: 'Skilled in UI/UX design, I craft visually engaging and user-friendly interfaces.',textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
                           DescriptionTextWidget(text: 'I focus on delivering seamless, intuitive experiences that prioritize the user’s needs', textColor: AppColors.lightblackColor),
@@ -387,7 +413,7 @@ class _DesktopViewState extends State<DesktopView> {
                     )
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
