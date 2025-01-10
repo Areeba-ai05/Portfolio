@@ -163,7 +163,7 @@ class _DesktopViewState extends State<DesktopView> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 70.0, top: 10),
+                    padding: const EdgeInsets.only(left: 70.0, top: 150),
                     child: Container(
                       height: 340,
                       width: 450,
@@ -178,7 +178,7 @@ class _DesktopViewState extends State<DesktopView> {
                     ),
                   ),
                   Positioned(
-                    top: 50, // Align the text with the image container
+                    top: 150, // Align the text with the image container
                     left: 690, // Positioned to the right of the image container
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
