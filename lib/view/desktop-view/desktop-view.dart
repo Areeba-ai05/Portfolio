@@ -259,7 +259,16 @@ class _DesktopViewState extends State<DesktopView> {
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
-
+                      children: [
+                        Container(
+                          height:80,
+                          width: 80,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.67),
+                                color:AppColors.primaryColor
+                          ),
+                        )
+                      ],
                       ),
                     ),
                     SizedBox(width:10),
