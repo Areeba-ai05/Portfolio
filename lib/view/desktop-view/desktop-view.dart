@@ -453,7 +453,7 @@ class _DesktopViewState extends State<DesktopView> {
                                borderRadius: BorderRadius.circular(10.67),
                                color:AppColors.bacckgroundColor,
                                image: DecorationImage(
-                                 image: AssetImage('assets/App-images/fb.jpg',),
+                                 image: AssetImage('assets/App-images/fb1.jpg',),
                                  fit: BoxFit.cover,
                                ),
                              ),
@@ -486,7 +486,7 @@ class _DesktopViewState extends State<DesktopView> {
                                    borderRadius: BorderRadius.circular(10.67),
                                    color:AppColors.bacckgroundColor,
                                    image: DecorationImage(
-                                     image: AssetImage('assets/App-images/fb.jpg',),
+                                     image: AssetImage('assets/App-images/wa.png',),
                                      fit: BoxFit.cover,
                                    ),
                                  ),
@@ -496,7 +496,7 @@ class _DesktopViewState extends State<DesktopView> {
                                  thickness: 2,
                                  height: 2),
                              SizedBox(height: 10,),
-                             NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
+                             NormalTextWidget(text: 'What/sApp Full Clone', textColor: AppColors.blackColor),
                            ],
                          ),
                        ),
@@ -519,7 +519,7 @@ class _DesktopViewState extends State<DesktopView> {
                                    borderRadius: BorderRadius.circular(10.67),
                                    color:AppColors.bacckgroundColor,
                                    image: DecorationImage(
-                                     image: AssetImage('assets/App-images/fb.jpg',),
+                                     image: AssetImage('assets/App-images/gold.jpg',),
                                      fit: BoxFit.cover,
                                    ),
                                  ),
@@ -529,7 +529,7 @@ class _DesktopViewState extends State<DesktopView> {
                                  thickness: 2,
                                  height: 2),
                              SizedBox(height: 10,),
-                             NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
+                             NormalTextWidget(text: 'Gold App Calculator', textColor: AppColors.blackColor),
                            ],
                          ),
                        )
