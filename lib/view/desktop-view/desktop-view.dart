@@ -536,6 +536,112 @@ class _DesktopViewState extends State<DesktopView> {
                      ],
                    ),
                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:280.0,top:20,),//container padding
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 250 ,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/count.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'Counter App', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width:30 ,),
+                        Container(
+                          height: 250 ,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/port.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'Portfolio ', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width:30 ,),
+                        Container(
+                          height: 250 ,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/todo.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'ToDo Task App', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+
                 ],
               ),
             )
