@@ -243,18 +243,18 @@ class _DesktopViewState extends State<DesktopView> {
           child: Column(
             children:[
               Padding(
-                padding: const EdgeInsets.only(left:40,top: 38.0),
+                padding: const EdgeInsets.only(left:40,top: 28.0),
                 child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
               ),
               SizedBox(height: 02,),
               BlackTextHeading(text: 'What I am capable of?'),
               Padding(
-                padding: const EdgeInsets.only(left:400.0,top: 30),
+                padding: const EdgeInsets.only(left:250.0,top: 20),
                 child: Row(
                   children: [
                     Container(
-                      height: 230 ,
-                      width: 400,
+                      height: 250 ,
+                      width: 500,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
@@ -292,8 +292,8 @@ class _DesktopViewState extends State<DesktopView> {
                     ),
                     SizedBox(width:50),
                     Container(
-                      height: 230 ,
-                      width: 400,
+                      height: 250 ,
+                      width: 500,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
@@ -332,12 +332,12 @@ class _DesktopViewState extends State<DesktopView> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left:400, top:30),
+                padding: const EdgeInsets.only(left:250, top:20,),
                 child: Row(
                   children: [
                     Container(
-                      height: 230 ,
-                      width:400,
+                      height: 250 ,
+                      width:500,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
@@ -345,7 +345,7 @@ class _DesktopViewState extends State<DesktopView> {
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(top:5.0),
+                            padding: const EdgeInsets.only(top:3.0),
                             child: Container(
                               height:80,
                               width: 80,
@@ -362,21 +362,21 @@ class _DesktopViewState extends State<DesktopView> {
                           SizedBox(height:5),
                           BlackTextHeading(text: 'FireBase'),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: 'I have a foundational understanding of Firebase, Google’s powerful backend-as-a-service platform.',textColor: AppColors.lightblackColor),
+                          DescriptionTextWidget(text: 'Firebase is a powerful backend platform that simplifies app development.',textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: ' I can integrate real-time databases, basic authentication, and cloud storage into applications.', textColor: AppColors.lightblackColor),
+                          DescriptionTextWidget(text:'I integrate real-time databases, authentication, and cloud storage. ', textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: 'With Firebase, I simplify backend tasks to enhance app functionality and deliver a smoother user experience.', textColor: AppColors.lightblackColor),
+                          DescriptionTextWidget(text:'Firebase helps me  make apps scalable, secure, and easy to manage. ', textColor: AppColors.lightblackColor),
                           SizedBox(height:8),
-                          DescriptionTextWidget(text: 'I’m also familiar with Firebase’s analytics and push notification features.It helps me delivering feature-rich, scalable, and easily manageable apps', textColor: AppColors.lightblackColor)
+                          DescriptionTextWidget(text: 'It streamlines backend tasks, ensuring smooth performance and growth.', textColor: AppColors.lightblackColor)
                         ],
                       ),
                     ),
 
                     SizedBox(width:50),
                     Container(
-                      height: 230 ,
-                      width: 400,
+                      height: 250 ,
+                      width: 500,
                       decoration: BoxDecoration(
                         color: AppColors.pcolor2,
                         borderRadius: BorderRadius.circular(10.67),
