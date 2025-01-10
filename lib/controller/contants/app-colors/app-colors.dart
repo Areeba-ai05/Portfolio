@@ -8,7 +8,7 @@ class AppColors{
 
   static Color  blackColor=Colors.black;
   static Color  lightblackColor=Colors.black87;
-  static Color  whiteColor=Colors.white;
+  static Color  whiteColor=Colors.white60.withOpacity(0.9);
   static Color  secondaryColor2=Color(0xffF28F8F);//peach
   static Color  zincColor=Color(0xff263238);
   static Color  tealColor=Color(0xff455A64);

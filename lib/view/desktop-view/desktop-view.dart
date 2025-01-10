@@ -108,7 +108,7 @@ class _DesktopViewState extends State<DesktopView> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 70.0, top: 200),
+                    padding: const EdgeInsets.only(left: 120.0, top: 300),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -136,12 +136,12 @@ class _DesktopViewState extends State<DesktopView> {
                   ),
                   Positioned(
                     //top: height* 0.9,//Adjust this value for vertical alignment
-                     top:50,
+                     top:120,
                     right: 170,
-                    bottom: 70,// Adjust horizontal alignment
+                    bottom: 90,// Adjust horizontal alignment
                     child: Container(
-                      height: 790,
-                      width: 370,
+                      height: 500,
+                      width: 420,
                       decoration: BoxDecoration(color: AppColors.tealColor,
                       //border:Border(),
                       borderRadius: BorderRadius.circular(15),
@@ -158,12 +158,12 @@ class _DesktopViewState extends State<DesktopView> {
               height: height * 0.9,
               width: width * 1.0, // Adjusted width for proper scaling
               decoration: BoxDecoration(
-                color: AppColors.primaryColor,
+                color: AppColors.pcolor2//primaryColor,
               ),
               child: Stack(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 70.0, top: 150),
+                    padding: const EdgeInsets.only(left: 90.0, top: 160),
                     child: Container(
                       height: 340,
                       width: 450,
@@ -178,8 +178,9 @@ class _DesktopViewState extends State<DesktopView> {
                     ),
                   ),
                   Positioned(
-                    top: 150, // Align the text with the image container
-                    left: 690, // Positioned to the right of the image container
+                    top: 180, // Align the text with the image container
+                    left: 670,
+                    right: 30,// Positioned to the right of the image container
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -208,12 +209,12 @@ class _DesktopViewState extends State<DesktopView> {
                         ),
                         SecondTextWidget(
                           text:
-                          ' I turn ideas into sleek, high-performing apps. From intuitive UIs to scalable solutions,.',
+                          ' I turn ideas into sleek, high-performing apps. From intuitive UIs to scalable solutions,',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
                           text:
-                          'I bring innovation to every project. Check out my work to see the difference!.',
+                          'I bring innovation to every project. Check out my work to see the difference!',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
@@ -241,11 +242,25 @@ class _DesktopViewState extends State<DesktopView> {
           child: Column(
             children:[
               Padding(
-                padding: const EdgeInsets.only(top: 18.0),
+                padding: const EdgeInsets.only(top: 68.0),
                 child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
               ),
               SizedBox(height: 05,),
-              BlackTextHeading(text: 'My Expertise')
+              BlackTextHeading(text: 'My Expertise'),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 28.0),
+                    child: Container(
+                      height: 200 ,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        color: AppColors.whiteColor
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
