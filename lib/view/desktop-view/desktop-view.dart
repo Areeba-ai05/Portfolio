@@ -417,6 +417,48 @@ class _DesktopViewState extends State<DesktopView> {
             ],
           ),
         ),
+            Container(
+              height: height * 0.9,
+              width: width * 1.0, // Adjusted width for proper scaling
+              decoration: BoxDecoration(
+                color: AppColors.whiteColor,
+              ),
+              child: Column(
+                children: [
+                  Padding(
+                  padding: const EdgeInsets.only(left:40,top: 28.0),//text padding
+                  child: NormalTextWidget(text: 'My Project', textColor:AppColors.backgroundColor),
+                ),
+                  SizedBox(height: 02,),
+                  BlackTextHeading(text: 'What I have made?'),
+                 Padding(
+                   padding: const EdgeInsets.only(left: 8.0,top:20),//container padding
+                   child: Row(
+                     children: [
+                       Container(
+                         height: 250 ,
+                         width: 300,
+                         decoration: BoxDecoration(
+                           color: AppColors.bacckgroundColor,
+                           borderRadius: BorderRadius.circular(10.67),
+                         ),
+                         child: Column(
+                           children: [
+                         Padding(
+                         padding: const EdgeInsets.only(top: 5.0),
+                         child: Container(
+
+                         ),
+                         )
+                           ],
+                         ),
+                       )
+                     ],
+                   ),
+                 )
+                ],
+              ),
+            )
           ],
         ),
       ),
