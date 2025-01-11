@@ -1,7 +1,6 @@
-class AppImages{
-  static String splashImg='assets/app.png';
+class AppIcons{
+  static String linkImg='assets/App-images/Linked.png';
+  static String gitImg='assets/App-images/Git.png';
+  static String instaImg='assets/App-images/Insta.png';
 
-  static String signinImg='assets/signin.png';
-  static String homeImg='assets/boy.png';
-  static String homeScreenImg='assets/homeimg.png';
 }

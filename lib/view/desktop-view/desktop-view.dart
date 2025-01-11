@@ -3,6 +3,7 @@ import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart'
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
 import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
+import 'package:portfoliowebsite/controller/widgets/app-Icons.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
 
 class DesktopView extends StatefulWidget {
@@ -666,7 +667,18 @@ class _DesktopViewState extends State<DesktopView> {
                   SizedBox(height: 2),
                   SecondTextWidget(text: 'areeba.seo05@gmail.com', textColor: AppColors.blackColor),
                   SizedBox(height: 5),
-                  IconButton(onPressed: (){}, icon: ,)
+                  InkWell(
+                    onTap: () {},
+                    child: Image.asset('assets/App-images/Linked.png'),
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Image.asset('assets/App-images/Git.png'),
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Image.asset('assets/App-images/Insta.png'),
+                  ),
                 ],
               ),
             ),
