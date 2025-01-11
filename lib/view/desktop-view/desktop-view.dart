@@ -159,7 +159,7 @@ class _DesktopViewState extends State<DesktopView> {
               height: height * 0.9,
               width: width * 1.0, // Adjusted width for proper scaling
               decoration: BoxDecoration(
-                color: AppColors.pcolor2//primaryColor,
+                color: AppColors.whiteColor,//primaryColor,
               ),
               child: Stack(
                 children: [
@@ -256,7 +256,7 @@ class _DesktopViewState extends State<DesktopView> {
                       height: 250 ,
                       width: 500,
                       decoration: BoxDecoration(
-                        color: AppColors.pcolor2,
+                        color: AppColors.whiteColor,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
@@ -295,7 +295,7 @@ class _DesktopViewState extends State<DesktopView> {
                       height: 250 ,
                       width: 500,
                       decoration: BoxDecoration(
-                        color: AppColors.pcolor2,
+                        color: AppColors.whiteColor,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
@@ -339,7 +339,7 @@ class _DesktopViewState extends State<DesktopView> {
                       height: 250 ,
                       width:500,
                       decoration: BoxDecoration(
-                        color: AppColors.pcolor2,
+                        color: AppColors.whiteColor,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
@@ -378,7 +378,7 @@ class _DesktopViewState extends State<DesktopView> {
                       height: 250 ,
                       width: 500,
                       decoration: BoxDecoration(
-                        color: AppColors.pcolor2,
+                        color: AppColors.whiteColor,
                         borderRadius: BorderRadius.circular(10.67),
                       ),
                       child: Column(
@@ -644,6 +644,32 @@ class _DesktopViewState extends State<DesktopView> {
 
                 ],
               ),
+            ),
+            Container(
+              height: height * 0.45,
+              width: width * 1.0, // Adjusted width for proper scaling
+              decoration: BoxDecoration(
+                color: AppColors.bacckgroundColor,
+              ),
+            child: Padding(
+              padding: const EdgeInsets.only(left:100.0, top:30),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  NormalTextWidget(
+                    text: 'Contacts',
+                    textColor: AppColors.backgroundColor,
+                  ),
+                  SizedBox(height: 2),
+                  BlackTextHeading(text: 'Get in touch'),
+                  SizedBox(height: 2),
+                  SecondTextWidget(text: 'areeba.seo05@gmail.com', textColor: AppColors.blackColor),
+                  SizedBox(height: 5),
+                  IconButton(onPressed: (){}, icon: ,)
+                ],
+              ),
+            ),
             )
           ],
         ),
