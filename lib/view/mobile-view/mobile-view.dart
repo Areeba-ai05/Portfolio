@@ -226,469 +226,100 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
               ),
             ),
 
-            Container(
-              height: height * 0.9,
-              width: width * 1.0, // Adjusted width for proper scaling
-              decoration: BoxDecoration(
-                color: AppColors.bacckgroundColor,
-              ),
-              child: Column(
-                children:[
-                  Padding(
-                    padding: const EdgeInsets.only(left:40,top: 28.0),
-                    child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
-                  ),
-                  SizedBox(height: 02,),
-                  BlackTextHeading(text: 'What I am capable of?'),
-                  Padding(
-                    padding: const EdgeInsets.only(left:250.0,top: 20),
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 250 ,
-                          width: 500,
-                          decoration: BoxDecoration(
-                            color: AppColors.whiteColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            // mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:80,
-                                  width: 80,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/dartlogo2.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height:5),
-                              BlackTextHeading(text: 'Dart Programming'),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: 'I specialize in Dart, a powerful language for modern app development', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: 'Dart allows me to write clean, efficient code for high-performance apps.', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: ' Whether for mobile, web, or desktop, I create seamless, reliable solutions.', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: ' Its strong integration with Flutter ensures smooth cross-platform development.', textColor: AppColors.lightblackColor)
-                            ],
-                          ),
-                        ),
-                        SizedBox(width:50),
-                        Container(
-                          height: 250 ,
-                          width: 500,
-                          decoration: BoxDecoration(
-                            color: AppColors.whiteColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top:5.0),
-                                child: Container(
-                                  height:80,
-                                  width: 80,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/flutter2.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height:5),
-                              BlackTextHeading(text: 'Flutter'),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text:'Flutter is a powerful toolkit for creating stunning, natively compiled apps.',textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text:'It allows me to develop apps for mobile, web, and desktop from a single codebase.', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text:' Flutter ensures smooth performance with pixel-perfect designs.', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text:' I craft beautiful, high-performance apps using Flutter', textColor: AppColors.lightblackColor)
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:250, top:20,),
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 250 ,
-                          width:500,
-                          decoration: BoxDecoration(
-                            color: AppColors.whiteColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top:3.0),
-                                child: Container(
-                                  height:80,
-                                  width: 80,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/firebase2.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height:5),
-                              BlackTextHeading(text: 'FireBase'),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: 'Firebase is a powerful backend platform that simplifies app development.',textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text:'I integrate real-time databases, authentication, and cloud storage. ', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text:'Firebase helps me  make apps scalable, secure, and easy to manage. ', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: 'It streamlines backend tasks, ensuring smooth performance and growth.', textColor: AppColors.lightblackColor)
-                            ],
-                          ),
-                        ),
+      
 
-                        SizedBox(width:50),
-                        Container(
-                          height: 250 ,
-                          width: 500,
-                          decoration: BoxDecoration(
-                            color: AppColors.whiteColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top:5.0),
-                                child: Container(
-                                  height:80,
-                                  width: 80,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/firebase2.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height:5),
-                              BlackTextHeading(text: 'UI/UX Design'),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: 'Skilled in UI/UX design, I craft visually engaging and user-friendly interfaces.',textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: 'I focus on delivering seamless, intuitive experiences that prioritize the user’s needs', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: ' From wireframes to polished designs, I ensure every detail enhances usability and visual appeal', textColor: AppColors.lightblackColor),
-                              SizedBox(height:8),
-                              DescriptionTextWidget(text: ' My designs combine creativity with functionality for effective user experiences', textColor: AppColors.lightblackColor)
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
+      Container(
+        height: MediaQuery.of(context).size.height * 0.5,
+        width: MediaQuery.of(context).size.width, // Full width
+        decoration: BoxDecoration(
+          color: AppColors.bacckgroundColor,
+        ),
+        child: Padding(
+          padding: EdgeInsets.only(
+            left: MediaQuery.of(context).size.width * 0.1, // 10% of screen width
+            top: MediaQuery.of(context).size.height * 0.06, // 6% of screen height
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              NormalTextWidget(
+                text: 'Contacts',
+                textColor: AppColors.backgroundColor,
               ),
-            ),
-            Container(
-              height: height * 0.9,
-              width: width * 1.0, // Adjusted width for proper scaling
-              decoration: BoxDecoration(
-                color: AppColors.whiteColor,
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.01, // Spacing scaled to screen height
               ),
-              child: Column(
+              BlackTextHeading(text: 'Get in touch'),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.01, // Spacing scaled to screen height
+              ),
+              SecondTextWidget(
+                text: 'areeba.seo05@gmail.com',
+                textColor: AppColors.blackColor,
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.03, // Spacing for better layout
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left:40,top: 28.0),//text padding
-                    child: NormalTextWidget(text: 'My Project', textColor:AppColors.backgroundColor),
-                  ),
-                  SizedBox(height: 02,),
-                  BlackTextHeading(text: 'What I have made?'),
-                  Padding(
-                    padding: const EdgeInsets.only(left:280.0,top:20,),//container padding
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 250 ,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            color: AppColors.bacckgroundColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:200,
-                                  width: 280,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/fb1.jpg',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Divider(color: Colors.black,
-                                  thickness: 2,
-                                  height: 2),
-                              SizedBox(height: 10,),
-                              NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
-                            ],
-                          ),
-                        ),
-                        SizedBox(width:30 ,),
-                        Container(
-                          height: 250 ,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            color: AppColors.bacckgroundColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:200,
-                                  width: 280,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/wa.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Divider(color: Colors.black,
-                                  thickness: 2,
-                                  height: 2),
-                              SizedBox(height: 10,),
-                              NormalTextWidget(text: 'What/sApp Full Clone', textColor: AppColors.blackColor),
-                            ],
-                          ),
-                        ),
-                        SizedBox(width:30 ,),
-                        Container(
-                          height: 250 ,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            color: AppColors.bacckgroundColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:200,
-                                  width: 280,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/gold.jpg',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Divider(color: Colors.black,
-                                  thickness: 2,
-                                  height: 2),
-                              SizedBox(height: 10,),
-                              NormalTextWidget(text: 'Gold App Calculator', textColor: AppColors.blackColor),
-                            ],
-                          ),
-                        )
-                      ],
+                  InkWell(
+                    onTap: () async {
+                      final linkedInurl = 'https://www.linkedin.com/in/areeba-iqbal-0888b2341';
+                      await launchUrl(Uri.parse(linkedInurl));
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: MediaQuery.of(context).size.width * 0.02, // Horizontal padding for spacing
+                      ),
+                      child: Image.asset(
+                        'assets/App-images/Linked.png',
+                        height: MediaQuery.of(context).size.height * 0.05, // Scale icon size
+                        width: MediaQuery.of(context).size.width * 0.1,
+                      ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:280.0,top:20,),//container padding
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 250 ,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            color: AppColors.bacckgroundColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:200,
-                                  width: 280,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/count.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Divider(color: Colors.black,
-                                  thickness: 2,
-                                  height: 2),
-                              SizedBox(height: 10,),
-                              NormalTextWidget(text: 'Counter App', textColor: AppColors.blackColor),
-                            ],
-                          ),
-                        ),
-                        SizedBox(width:30 ,),
-                        Container(
-                          height: 250 ,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            color: AppColors.bacckgroundColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:200,
-                                  width: 280,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/port.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Divider(color: Colors.black,
-                                  thickness: 2,
-                                  height: 2),
-                              SizedBox(height: 10,),
-                              NormalTextWidget(text: 'Portfolio ', textColor: AppColors.blackColor),
-                            ],
-                          ),
-                        ),
-                        SizedBox(width:30 ,),
-                        Container(
-                          height: 250 ,
-                          width: 300,
-                          decoration: BoxDecoration(
-                            color: AppColors.bacckgroundColor,
-                            borderRadius: BorderRadius.circular(10.67),
-                          ),
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 5.0),
-                                child: Container(
-                                  height:200,
-                                  width: 280,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10.67),
-                                    color:AppColors.bacckgroundColor,
-                                    image: DecorationImage(
-                                      image: AssetImage('assets/App-images/todo.png',),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Divider(color: Colors.black,
-                                  thickness: 2,
-                                  height: 2),
-                              SizedBox(height: 10,),
-                              NormalTextWidget(text: 'ToDo Task App', textColor: AppColors.blackColor),
-                            ],
-                          ),
-                        )
-                      ],
+                  InkWell(
+                    onTap: () async {
+                      final giturl = 'https://github.com/Areeba-ai05';
+                      await launchUrl(Uri.parse(giturl));
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: MediaQuery.of(context).size.width * 0.02, // Horizontal padding for spacing
+                      ),
+                      child: Image.asset(
+                        'assets/App-images/Git.png',
+                        height: MediaQuery.of(context).size.height * 0.05, // Scale icon size
+                        width: MediaQuery.of(context).size.width * 0.1,
+                      ),
                     ),
                   ),
-
+                  InkWell(
+                    onTap: () async {
+                      final instaurl = ''; // Add valid Instagram URL here
+                      await launchUrl(Uri.parse(instaurl));
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: MediaQuery.of(context).size.width * 0.02, // Horizontal padding for spacing
+                      ),
+                      child: Image.asset(
+                        'assets/App-images/Insta.png',
+                        height: MediaQuery.of(context).size.height * 0.05, // Scale icon size
+                        width: MediaQuery.of(context).size.width * 0.1,
+                      ),
+                    ),
+                  ),
                 ],
               ),
-            ),
-            Container(
-              height: height * 0.5,
-              width: width * 1.0, // Adjusted width for proper scaling
-              decoration: BoxDecoration(
-                color: AppColors.bacckgroundColor,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(left:100.0, top:60),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    NormalTextWidget(
-                      text: 'Contacts',
-                      textColor: AppColors.backgroundColor,
-                    ),
-                    SizedBox(height: 2),
-                    BlackTextHeading(text: 'Get in touch'),
-                    SizedBox(height: 2),
-                    SecondTextWidget(text: 'areeba.seo05@gmail.com', textColor: AppColors.blackColor),
-                    SizedBox(height: 15),
-                    Row(
-                      children: [
-                        InkWell(
-                          onTap: () async{
-                            final linkedInurl='www.linkedin.com/in/areeba-iqbal-0888b2341';
-                            await launchUrl(Uri.parse(linkedInurl));
-                          },
-                          child: Image.asset('assets/App-images/Linked.png'),
-                        ),
+            ],
+          ),
+        ),
+      ),
 
-                        InkWell(
-                          onTap: () async{
-                            final giturl='https://github.com/Areeba-ai05';
-                            await launchUrl(Uri.parse(giturl));
-                          },
-                          child: Image.asset('assets/App-images/Git.png'),
-                        ),
-                        InkWell(
-                          onTap: () async{
-                            final instaurl='';
-                            await launchUrl(Uri.parse(instaurl));
-                          },
-                          child: Image.asset('assets/App-images/Insta.png'),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            )
-          ],
+      ],
         ),
       ),
     );

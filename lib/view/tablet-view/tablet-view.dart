@@ -15,7 +15,8 @@ class _HomeViewTabletState extends State<HomeViewTablet> {
             child: Center(
               child: Text('Tablet',style:TextStyle(fontSize: 30,
                   fontWeight: FontWeight.w700,color: Colors.black),),
-            ))
+            )),
+
     );
   }
 }
