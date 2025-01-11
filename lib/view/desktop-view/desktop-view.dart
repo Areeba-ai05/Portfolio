@@ -653,7 +653,7 @@ class _DesktopViewState extends State<DesktopView> {
                 color: AppColors.bacckgroundColor,
               ),
             child: Padding(
-              padding: const EdgeInsets.only(left:100.0, top:30),
+              padding: const EdgeInsets.only(left:100.0, top:60),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -666,7 +666,7 @@ class _DesktopViewState extends State<DesktopView> {
                   BlackTextHeading(text: 'Get in touch'),
                   SizedBox(height: 2),
                   SecondTextWidget(text: 'areeba.seo05@gmail.com', textColor: AppColors.blackColor),
-                  SizedBox(height: 5),
+                  SizedBox(height: 15),
                   Row(
                     children: [
                       InkWell(
@@ -676,8 +676,7 @@ class _DesktopViewState extends State<DesktopView> {
                       },
                         child: Image.asset('assets/App-images/Linked.png'),
                       ),
-                    ],
-                  ),
+
                   InkWell(
                     onTap: () async{
                       final giturl='https://github.com/Areeba-ai05';
@@ -687,10 +686,12 @@ class _DesktopViewState extends State<DesktopView> {
                   ),
                   InkWell(
                     onTap: () async{
-                      final instaurl='www.linkedin.com/in/areeba-iqbal-0888b2341';
+                      final instaurl='';
                       await launchUrl(Uri.parse(instaurl));
                     },
                     child: Image.asset('assets/App-images/Insta.png'),
+                  ),
+                    ],
                   ),
                 ],
               ),
