@@ -3,7 +3,6 @@ import 'package:portfoliowebsite/controller/contants/app-colors/app-colors.dart'
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
 import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
-import 'package:portfoliowebsite/controller/widgets/app-Icons.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -648,7 +647,7 @@ class _DesktopViewState extends State<DesktopView> {
               ),
             ),
             Container(
-              height: height * 0.45,
+              height: height * 0.5,
               width: width * 1.0, // Adjusted width for proper scaling
               decoration: BoxDecoration(
                 color: AppColors.bacckgroundColor,
@@ -668,18 +667,28 @@ class _DesktopViewState extends State<DesktopView> {
                   SizedBox(height: 2),
                   SecondTextWidget(text: 'areeba.seo05@gmail.com', textColor: AppColors.blackColor),
                   SizedBox(height: 5),
-                  InkWell(
-                    onTap: () {},
-                    child: Image.asset('assets/App-images/Linked.png'),
+                  Row(
+                    children: [
+                      InkWell(
+                        onTap: () async{
+                      final linkedInurl='www.linkedin.com/in/areeba-iqbal-0888b2341';
+                      await launchUrl(Uri.parse(linkedInurl));
+                      },
+                        child: Image.asset('assets/App-images/Linked.png'),
+                      ),
+                    ],
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () async{
+                      final giturl='https://github.com/Areeba-ai05';
+                      await launchUrl(Uri.parse(giturl));
+                    },
                     child: Image.asset('assets/App-images/Git.png'),
                   ),
                   InkWell(
                     onTap: () async{
-                      final linkedInurl='www.linkedin.com/in/areeba-iqbal-0888b2341';
-                      await launchUrl(Uri.parse(linkedInurl));
+                      final instaurl='www.linkedin.com/in/areeba-iqbal-0888b2341';
+                      await launchUrl(Uri.parse(instaurl));
                     },
                     child: Image.asset('assets/App-images/Insta.png'),
                   ),
