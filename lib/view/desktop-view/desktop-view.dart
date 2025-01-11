@@ -5,6 +5,7 @@ import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/app-Icons.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DesktopView extends StatefulWidget {
   const DesktopView({super.key});
@@ -676,7 +677,10 @@ class _DesktopViewState extends State<DesktopView> {
                     child: Image.asset('assets/App-images/Git.png'),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () async{
+                      final linkedInurl='www.linkedin.com/in/areeba-iqbal-0888b2341';
+                      await launchUrl(Uri.parse(linkedInurl));
+                    },
                     child: Image.asset('assets/App-images/Insta.png'),
                   ),
                 ],
