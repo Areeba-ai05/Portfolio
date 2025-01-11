@@ -14,8 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
       //DebugHomeScreen=false,
-      title: 'Flutter Demo',
+      title: 'Areeba Iqbal',
       theme: ThemeData(
         // This is the theme of your application.
         //

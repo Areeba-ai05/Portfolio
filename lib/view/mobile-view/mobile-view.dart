@@ -7,7 +7,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../controller/contants/app-colors/app-colors.dart';
 
 class HomeViewMobile extends StatefulWidget {
-  const HomeViewMobile({super.key});
+
+   HomeViewMobile({super.key, });
 
   @override
   State<HomeViewMobile> createState() => _HomeViewMobileState();
@@ -109,7 +110,7 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                   Padding(
                     padding: EdgeInsets.only(
                       left: MediaQuery.of(context).size.width * 0.1, // Adjust for mobile
-                      top: MediaQuery.of(context).size.height * 0.3, // Adjust for mobile
+                      top: MediaQuery.of(context).size.height * 0.2, // Adjust for mobile
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -135,10 +136,10 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                     ),
                   ),
                   Positioned(
-                    top: MediaQuery.of(context).size.height * 0.2, // Adjust vertical position
+                    top: MediaQuery.of(context).size.height * 0.4, // Adjust vertical position
                     right: MediaQuery.of(context).size.width * 0.1, // Adjust horizontal position
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.4,
+                      height: MediaQuery.of(context).size.height * 0.5,
                       width: MediaQuery.of(context).size.width * 0.7,
                       decoration: BoxDecoration(
                         color: AppColors.tealColor,
@@ -226,7 +227,69 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
               ),
             ),
 
-      
+            Container(
+              height: MediaQuery.of(context).size.height * 0.9,
+              width: MediaQuery.of(context).size.width, // Full width
+              decoration: BoxDecoration(
+                color: AppColors.whiteColor, // Primary color
+              ),
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: MediaQuery.of(context).size.width * 0.1,
+                      top: MediaQuery.of(context).size.height * 0.2,
+                    ),
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.3,
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      decoration: BoxDecoration(
+                        color: AppColors.primaryColor,
+                        borderRadius: BorderRadius.circular(15),
+                        image: DecorationImage(
+                          image: AssetImage('assets/App-images/img1.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: MediaQuery.of(context).size.height * 0.25, // Adjusted position
+                    left: MediaQuery.of(context).size.width * 0.1,
+                    right: MediaQuery.of(context).size.width * 0.1, // Align within screen width
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        NormalTextWidget(
+                          text: 'About',
+                          textColor: AppColors.backgroundColor,
+                        ),
+                        SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+                        BlackTextHeading(text: 'About Me?'),
+                        SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+                        SecondTextWidget(
+                          text: 'A passionate Android developer with expertise in Flutter and Dart.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text: 'Crafting seamless mobile experiences is my passion!',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text: 'From intuitive UIs to scalable solutions, I bring innovation to every project.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text: 'Check out my work to see the difference!',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
 
       Container(
         height: MediaQuery.of(context).size.height * 0.5,
@@ -326,3 +389,5 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
 
   }
 }
+
+

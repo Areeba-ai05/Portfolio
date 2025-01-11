@@ -133,6 +133,14 @@ class _DesktopViewState extends State<DesktopView> {
                           'I create sleek, user-friendly apps that solve real-world problems.',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height: 37),
+                        Container(
+                            height: 54,
+                            width:224,
+                            decoration: BoxDecoration(
+                              color:AppColors.backgroundColor,
+                            ),
+                            child: TextButton(onPressed: (){}, child: NormalTextWidget(text: 'Contact', textColor: AppColors.whiteColor)))
                       ],
                     ),
                   ),
@@ -693,6 +701,9 @@ class _DesktopViewState extends State<DesktopView> {
                   ),
                     ],
                   ),
+                  SizedBox(height: 10),
+                  SecondTextWidget(text: 'Copyright 2025.Develop & Design by Areeba Iqbal ', textColor: AppColors.blackColor),
+
                 ],
               ),
             ),
