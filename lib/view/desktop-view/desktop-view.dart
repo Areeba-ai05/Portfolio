@@ -203,40 +203,36 @@ class _DesktopViewState extends State<DesktopView> {
                         BlackTextHeading(text: 'About Me?'),
                         SizedBox(height: 5),
                         SecondTextWidget(
-                          text:
-                          ' A passionate Android developer with expertise in Flutter and Dart.',
+                          text: ' A creative Android developer with a passion for building innovative mobile applications.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text:
-                          'Crafting seamless mobile experiences is my passion!   ',
+                          text: 'Expert in Flutter & Dart, building dynamic, high-performance apps for seamless user experiences.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text:
-                          'As an Android developer skilled in Flutter and Dart,',
+                          text: 'I’ve also mastered the basics of Firebase, integrating real-time databases, authentication, and cloud storage seamlessly into apps.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text:
-                          ' I turn ideas into sleek, high-performing apps. From intuitive UIs to scalable solutions,',
+                          text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text:
-                          'I bring innovation to every project. Check out my work to see the difference!',
+                          text: 'I thrive on turning ideas into functional, impactful solutions.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text:
-                          'Whether it’s building a complex layout like a Facebook clone or debugging intricate issues,',
+                          text: 'I’m always exploring the latest technologies and trends in mobile development to stay ahead of the curve.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text:
-                          ' I thrive on solving challenges and delivering quality results.',
+                          text: 'Always curious and eager to learn, I stay updated with the latest trends in mobile development to deliver forward-thinking apps.',
                           textColor: AppColors.lightblackColor,
-                        )
+                        ),
+                        SecondTextWidget(
+                          text: 'Let’s build something extraordinary together—take a look at my projects to see how I bring ideas to life!', textColor: AppColors.lightblackColor,
+                        ),
                       ],
                     ),
                   ),
@@ -694,7 +690,7 @@ class _DesktopViewState extends State<DesktopView> {
                   ),
                   InkWell(
                     onTap: () async{
-                      final instaurl='';
+                      final instaurl='https://www.instagram.com/software_sprinkles/';
                       await launchUrl(Uri.parse(instaurl));
                     },
                     child: Image.asset('assets/App-images/Insta.png'),

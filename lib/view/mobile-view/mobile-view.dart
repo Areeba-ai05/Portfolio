@@ -22,7 +22,7 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color: Colors.brown),
+              decoration: BoxDecoration(color: AppColors.bacckgroundColor),
               currentAccountPicture: CircleAvatar(),
               accountName: Text('Areeba Iqbal'),
               accountEmail: Text('areeba.seo05@gmail.com'),
@@ -69,33 +69,21 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
           ],
         ),
       ),
-      appBar: AppBar(
-        backgroundColor: AppColors.bacckgroundColor,
-        title: Text(
-          'software_sprinkles',
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
-        ),
-        actions: [
-          TextButton(
-              onPressed: () {}, child: Text('Home', style: TextStyle(fontSize: 18, color: Colors.black))),
-          TextButton(
-              onPressed: () {}, child: Text('About', style: TextStyle(fontSize: 18, color: Colors.black))),
-          TextButton(
-              onPressed: () {}, child: Text('Skills', style: TextStyle(fontSize: 18, color: Colors.black))),
-          TextButton(
-              onPressed: () {}, child: Text('Projects', style: TextStyle(fontSize: 18, color: Colors.black))),
-          TextButton(
-              onPressed: () {}, child: Text('Contact', style: TextStyle(fontSize: 18, color: Colors.black))),
-        ],
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(2),
-          child: Divider(
-            color: Colors.black,
-            thickness: 2,
-            height: 2,
-          ),
+    appBar: AppBar(
+    backgroundColor: AppColors.bacckgroundColor,
+    title: Text(
+    'software_sprinkles',
+    style: TextStyle(fontSize: 23, fontWeight: FontWeight.w400),
+    ),
+      bottom: PreferredSize(
+        preferredSize: Size.fromHeight(2),
+        child: Divider(
+          color: Colors.black,
+          thickness: 2,
+          height: 2,
         ),
       ),
+    ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -103,14 +91,14 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
               height: MediaQuery.of(context).size.height * 0.9,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                color: AppColors.backgroundColor,
+                color: AppColors.bacckgroundColor,
               ),
               child: Stack(
                 children: [
                   Padding(
                     padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width * 0.1, // Adjust for mobile
-                      top: MediaQuery.of(context).size.height * 0.2, // Adjust for mobile
+                      left: MediaQuery.of(context).size.width * 0.05, // Adjust for mobile
+                      top: MediaQuery.of(context).size.height * 0.25, // Adjust for mobile
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,15 +120,23 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                           text: 'I create sleek, user-friendly apps that solve real-world problems.',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height: 280),
+                        Container(
+                            height: 44,
+                            width:190,
+                            decoration: BoxDecoration(
+                              color:AppColors.backgroundColor,
+                            ),
+                            child: TextButton(onPressed: (){}, child: NormalTextWidget(text: 'Contact', textColor: AppColors.whiteColor)))
                       ],
                     ),
                   ),
                   Positioned(
-                    top: MediaQuery.of(context).size.height * 0.4, // Adjust vertical position
-                    right: MediaQuery.of(context).size.width * 0.1, // Adjust horizontal position
+                    top: MediaQuery.of(context).size.height * 0.43, // Adjust vertical position
+                    right: MediaQuery.of(context).size.width * 0.05, // Adjust horizontal position
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.5,
-                      width: MediaQuery.of(context).size.width * 0.7,
+                      height: MediaQuery.of(context).size.height * 0.3,
+                      width: MediaQuery.of(context).size.width * 0.9,
                       decoration: BoxDecoration(
                         color: AppColors.tealColor,
                         borderRadius: BorderRadius.circular(15),
@@ -149,84 +145,13 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                           fit: BoxFit.cover,
                         ),
                       ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: MediaQuery.of(context).size.height * 0.9,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                color: AppColors.whiteColor,
-              ),
-              child: Stack(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width * 0.05, // Adjust for mobile
-                      top: MediaQuery.of(context).size.height * 0.2, // Adjust for mobile
-                    ),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height * 0.4,
-                      width: MediaQuery.of(context).size.width * 0.8,
-                      decoration: BoxDecoration(
-                        color: AppColors.primaryColor,
-                        borderRadius: BorderRadius.circular(15),
-                        image: DecorationImage(
-                          image: AssetImage('assets/App-images/img1.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: MediaQuery.of(context).size.height * 0.2, // Align with image
-                    left: MediaQuery.of(context).size.width * 0.1, // Adjust for mobile
-                    right: MediaQuery.of(context).size.width * 0.05, // Adjust for mobile
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        NormalTextWidget(
-                          text: 'About',
-                          textColor: AppColors.backgroundColor,
-                        ),
-                        SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-                        BlackTextHeading(text: 'About Me?'),
-                        SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-                        SecondTextWidget(
-                          text: 'A passionate Android developer with expertise in Flutter and Dart.',
-                          textColor: AppColors.lightblackColor,
-                        ),
-                        SizedBox(height: MediaQuery.of(context).size.height * 0.005),
-                        SecondTextWidget(
-                          text: 'Crafting seamless mobile experiences is my passion!',
-                          textColor: AppColors.lightblackColor,
-                        ),
-                        SecondTextWidget(
-                          text: 'As an Android developer skilled in Flutter and Dart,',
-                          textColor: AppColors.lightblackColor,
-                        ),
-                        SecondTextWidget(
-                          text: 'I turn ideas into sleek, high-performing apps.',
-                          textColor: AppColors.lightblackColor,
-                        ),
-                        SecondTextWidget(
-                          text: 'Whether it’s building complex layouts or solving challenges,',
-                          textColor: AppColors.lightblackColor,
-                        ),
-                        SecondTextWidget(
-                          text: 'I thrive on delivering quality results.',
-                          textColor: AppColors.lightblackColor,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
 
+                    ),
+
+                  ),
+                ],
+              ),
+            ),
             Container(
               height: MediaQuery.of(context).size.height * 0.9,
               width: MediaQuery.of(context).size.width, // Full width
@@ -236,9 +161,7 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(
-                      left: MediaQuery.of(context).size.width * 0.1,
-                      top: MediaQuery.of(context).size.height * 0.2,
+                    padding: EdgeInsets.only(left: 18, top:  72,
                     ),
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.3,
@@ -254,7 +177,7 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                     ),
                   ),
                   Positioned(
-                    top: MediaQuery.of(context).size.height * 0.25, // Adjusted position
+                    top: MediaQuery.of(context).size.height * 0.43, // Adjusted position
                     left: MediaQuery.of(context).size.width * 0.1,
                     right: MediaQuery.of(context).size.width * 0.1, // Align within screen width
                     child: Column(
@@ -264,24 +187,37 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                           text: 'About',
                           textColor: AppColors.backgroundColor,
                         ),
-                        SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+                        SizedBox(height:03),
                         BlackTextHeading(text: 'About Me?'),
                         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
                         SecondTextWidget(
-                          text: 'A passionate Android developer with expertise in Flutter and Dart.',
+                          text: ' A creative Android developer with a passion for building innovative mobile applications.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text: 'Crafting seamless mobile experiences is my passion!',
+                          text: 'With expertise in Flutter and Dart, I specialize in crafting dynamic, high-performance apps that deliver sleek and seamless user experiences.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text: 'From intuitive UIs to scalable solutions, I bring innovation to every project.',
+                          text: 'I’ve also mastered the basics of Firebase, integrating real-time databases, authentication, and cloud storage seamlessly into apps."',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(text: 'I thrive on turning ideas into functional, impactful solutions.',
                           textColor: AppColors.lightblackColor,
                         ),
                         SecondTextWidget(
-                          text: 'Check out my work to see the difference!',
+                          text: 'I’m always exploring the latest technologies and trends in mobile development to stay ahead of the curve.',
                           textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text: 'Always curious and eager to learn, I stay updated with the latest trends in mobile development to deliver forward-thinking apps.',
+                          textColor: AppColors.lightblackColor,
+                        ),
+                        SecondTextWidget(
+                          text: 'Let’s build something extraordinary together—take a look at my projects to see how I bring ideas to life!', textColor: AppColors.lightblackColor,
                         ),
                       ],
                     ),
@@ -361,7 +297,7 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                   ),
                   InkWell(
                     onTap: () async {
-                      final instaurl = ''; // Add valid Instagram URL here
+                      final instaurl = 'https://www.instagram.com/software_sprinkles/'; // Add valid Instagram URL here
                       await launchUrl(Uri.parse(instaurl));
                     },
                     child: Padding(
@@ -371,12 +307,13 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                       child: Image.asset(
                         'assets/App-images/Insta.png',
                         height: MediaQuery.of(context).size.height * 0.05, // Scale icon size
-                        width: MediaQuery.of(context).size.width * 0.1,
-                      ),
+                        width: MediaQuery.of(context).size.width * 0.1,),
                     ),
                   ),
                 ],
               ),
+              SizedBox(height: 120),
+              SecondTextWidget(text: 'Copyright 2025.Develop & Design by Areeba Iqbal ', textColor: AppColors.blackColor),
             ],
           ),
         ),
