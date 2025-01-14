@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
+import 'package:portfoliowebsite/controller/widgets/secondTextWiget2.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../controller/contants/app-colors/app-colors.dart';
@@ -190,33 +191,33 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                         SizedBox(height:03),
                         BlackTextHeading(text: 'About Me?'),
                         SizedBox(height: MediaQuery.of(context).size.height * 0.02),
-                        SecondTextWidget(
+                        SecondText_Widget(
                           text: ' A creative Android developer with a passion for building innovative mobile applications.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(
+                        SecondText_Widget(
                           text: 'With expertise in Flutter and Dart, I specialize in crafting dynamic, high-performance apps that deliver sleek and seamless user experiences.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(
+                        SecondText_Widget(
                           text: 'I’ve also mastered the basics of Firebase, integrating real-time databases, authentication, and cloud storage seamlessly into apps."',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
+                        SecondText_Widget(text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(text: 'I thrive on turning ideas into functional, impactful solutions.',
+                        SecondText_Widget(text: 'I thrive on turning ideas into functional, impactful solutions.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(
+                        SecondText_Widget(
                           text: 'I’m always exploring the latest technologies and trends in mobile development to stay ahead of the curve.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(
+                        SecondText_Widget(
                           text: 'Always curious and eager to learn, I stay updated with the latest trends in mobile development to deliver forward-thinking apps.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SecondTextWidget(
+                        SecondText_Widget(
                           text: 'Let’s build something extraordinary together—take a look at my projects to see how I bring ideas to life!', textColor: AppColors.lightblackColor,
                         ),
                       ],
