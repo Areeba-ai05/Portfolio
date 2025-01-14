@@ -8,6 +8,6 @@ class SecondText_Widget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FittedBox(child: Text(text, style: GoogleFonts.poppins(fontSize: 25,fontWeight: FontWeight.w500,color:textColor),));
+    return FittedBox(child: Text(text, style: GoogleFonts.poppins(fontSize: 55,fontWeight: FontWeight.w600,color:textColor),));
   }
 }

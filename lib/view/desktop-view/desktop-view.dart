@@ -214,22 +214,27 @@ class _DesktopViewState extends State<DesktopView> {
                           text: 'I’ve also mastered the basics of Firebase, integrating real-time databases, authentication, and cloud storage seamlessly into apps.',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height:3),
                         SecondTextWidget(
                           text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height:3),
                         SecondTextWidget(
                           text: 'I thrive on turning ideas into functional, impactful solutions.',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height:3),
                         SecondTextWidget(
                           text: 'I’m always exploring the latest technologies and trends in mobile development to stay ahead of the curve.',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height:3),
                         SecondTextWidget(
                           text: 'Always curious and eager to learn, I stay updated with the latest trends in mobile development to deliver forward-thinking apps.',
                           textColor: AppColors.lightblackColor,
                         ),
+                        SizedBox(height:3),
                         SecondTextWidget(
                           text: 'Let’s build something extraordinary together—take a look at my projects to see how I bring ideas to life!', textColor: AppColors.lightblackColor,
                         ),
