@@ -173,9 +173,9 @@ class _DesktopViewState extends State<DesktopView> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 90.0, top: 160),
+                    padding: const EdgeInsets.only(left: 100.0, top: 140),
                     child: Container(
-                      height: 340,
+                      height: 390,
                       width: 450,
                       decoration: BoxDecoration(
                         color: AppColors.primaryColor,
@@ -188,8 +188,8 @@ class _DesktopViewState extends State<DesktopView> {
                     ),
                   ),
                   Positioned(
-                    top: 180, // Align the text with the image container
-                    left: 670,
+                    top: 200, // Align the text with the image container
+                    left: 630,
                     right: 30,// Positioned to the right of the image container
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -214,27 +214,27 @@ class _DesktopViewState extends State<DesktopView> {
                           text: 'I’ve also mastered the basics of Firebase, integrating real-time databases, authentication, and cloud storage seamlessly into apps.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:3),
+                        SizedBox(height:4),
                         SecondTextWidget(
                           text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:3),
+                        SizedBox(height:4),
                         SecondTextWidget(
                           text: 'I thrive on turning ideas into functional, impactful solutions.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:3),
+                        SizedBox(height:4),
                         SecondTextWidget(
                           text: 'I’m always exploring the latest technologies and trends in mobile development to stay ahead of the curve.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:3),
+                        SizedBox(height:4),
                         SecondTextWidget(
                           text: 'Always curious and eager to learn, I stay updated with the latest trends in mobile development to deliver forward-thinking apps.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:3),
+                        SizedBox(height:4),
                         SecondTextWidget(
                           text: 'Let’s build something extraordinary together—take a look at my projects to see how I bring ideas to life!', textColor: AppColors.lightblackColor,
                         ),

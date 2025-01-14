@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfoliowebsite/controller/widgets/Blackrext-hrading.dart';
+import 'package:portfoliowebsite/controller/widgets/DescriptionTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/NormalTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWidget.dart';
 import 'package:portfoliowebsite/controller/widgets/secondTextWiget2.dart';
@@ -162,11 +163,11 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
               child: Stack(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 18, top:  72,
+                    padding: EdgeInsets.only(left: 18, top:  52,
                     ),
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.3,
-                      width: MediaQuery.of(context).size.width * 0.8,
+                      width: MediaQuery.of(context).size.width * 0.9,
                       decoration: BoxDecoration(
                         color: AppColors.primaryColor,
                         borderRadius: BorderRadius.circular(15),
@@ -178,7 +179,7 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                     ),
                   ),
                   Positioned(
-                    top: MediaQuery.of(context).size.height * 0.43, // Adjusted position
+                    top: MediaQuery.of(context).size.height * 0.4, // Adjusted position
                     left: MediaQuery.of(context).size.width * 0.1,
                     right: MediaQuery.of(context).size.width * 0.1, // Align within screen width
                     child: Column(
@@ -188,42 +189,42 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                           text: 'About',
                           textColor: AppColors.backgroundColor,
                         ),
-                        SizedBox(height:03),
+                        SizedBox(height:0.5),
                         BlackTextHeading(text: 'About Me?'),
-                        SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+                        SizedBox(height:1),
                         SecondText_Widget(
                           text: ' A creative Android developer with a passion for building innovative mobile applications.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(
                           text: 'With expertise in Flutter and Dart, I specialize in crafting dynamic, high-performance apps that deliver sleek and seamless user experiences.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(
                           text: 'I’ve also mastered the basics of Firebase, integrating real-time databases, authentication, and cloud storage seamlessly into apps."',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(text: 'Whether it’s designing intuitive UIs, optimizing performance, or implementing cutting-edge features, ',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(text: 'I thrive on turning ideas into functional, impactful solutions.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(
                           text: 'I’m always exploring the latest technologies and trends in mobile development to stay ahead of the curve.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(
                           text: 'Always curious and eager to learn, I stay updated with the latest trends in mobile development to deliver forward-thinking apps.',
                           textColor: AppColors.lightblackColor,
                         ),
-                        SizedBox(height:4),
+                        SizedBox(height:1),
                         SecondText_Widget(
                           text: 'Let’s build something extraordinary together—take a look at my projects to see how I bring ideas to life!', textColor: AppColors.lightblackColor,
                         ),
@@ -233,7 +234,195 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                 ],
               ),
             ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.9,
+              width: MediaQuery.of(context).size.width, // Adjusted width for proper scaling
+              decoration: BoxDecoration(
+                color: AppColors.bacckgroundColor,
+              ),
+              child: Column(
+                children:[
+                  Padding(
+                    padding: const EdgeInsets.only(left:40,top: 28.0),
+                    child: NormalTextWidget(text: 'My Skills', textColor:AppColors.backgroundColor),
+                  ),
+                  SizedBox(height: 02,),
+                  BlackTextHeading(text: 'What I am capable of?'),
+                  Padding(
+                    padding: const EdgeInsets.only(left:20.0,top: 20),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 230 ,
+                            width: 300,
+                            decoration: BoxDecoration(
+                              color: AppColors.whiteColor,
+                              borderRadius: BorderRadius.circular(10.67),
+                            ),
+                            child: Column(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 5.0),
+                                  child: Container(
+                                    height:70,
+                                    width: 70,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.67),
+                                      color:AppColors.bacckgroundColor,
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/App-images/dartlogo2.png',),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height:5),
+                                BlackTextHeading(text: 'Dart Programming'),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'I specialize in Dart, a powerful language for modern app development', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'Dart allows me to write clean, efficient code for high-performance apps.', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'Whether for mobile, web, or desktop, I create seamless, reliable solutions.', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'Its strong integration with Flutter ensures smooth cross-platform development.', textColor: AppColors.lightblackColor)
+                              ],
+                            ),
+                          ),
+                          SizedBox(width:50),
+                          Container(
+                            height: 250 ,
+                            width: 300,
+                            decoration: BoxDecoration(
+                              color: AppColors.whiteColor,
+                              borderRadius: BorderRadius.circular(10.67),
+                            ),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top:5.0),
+                                  child: Container(
+                                    height:80,
+                                    width: 80,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.67),
+                                      color:AppColors.bacckgroundColor,
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/App-images/flutter2.png',),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height:5),
+                                BlackTextHeading(text: 'Flutter'),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text:'Flutter is a powerful toolkit for creating stunning, natively compiled apps.',textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text:'It allows me to develop apps for mobile, web, and desktop from a single codebase.', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text:' Flutter ensures smooth performance with pixel-perfect designs.', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text:' I craft beautiful, high-performance apps using Flutter', textColor: AppColors.lightblackColor)
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:20, top:20,),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 250 ,
+                            width:300,
+                            decoration: BoxDecoration(
+                              color: AppColors.whiteColor,
+                              borderRadius: BorderRadius.circular(10.67),
+                            ),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top:3.0),
+                                  child: Container(
+                                    height:80,
+                                    width: 80,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.67),
+                                      color:AppColors.bacckgroundColor,
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/App-images/firebase2.png',),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height:5),
+                                BlackTextHeading(text: 'FireBase'),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'Firebase is a powerful backend platform that simplifies app development.',textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text:'I integrate real-time databases, authentication, and cloud storage. ', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text:'Firebase helps me  make apps scalable, secure, and easy to manage. ', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'It streamlines backend tasks, ensuring smooth performance and growth.', textColor: AppColors.lightblackColor)
+                              ],
+                            ),
+                          ),
 
+                          SizedBox(width:50),
+                          Container(
+                            height: 250 ,
+                            width: 300,
+                            decoration: BoxDecoration(
+                              color: AppColors.whiteColor,
+                              borderRadius: BorderRadius.circular(10.67),
+                            ),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top:5.0),
+                                  child: Container(
+                                    height:80,
+                                    width: 80,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.67),
+                                      color:AppColors.bacckgroundColor,
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/App-images/firebase2.png',),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height:5),
+                                BlackTextHeading(text: 'UI/UX Design'),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'Skilled in UI/UX design, I craft visually engaging and user-friendly interfaces.',textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: 'I focus on delivering seamless, intuitive experiences that prioritize the user’s needs', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: ' From wireframes to polished designs, I ensure every detail enhances usability and visual appeal', textColor: AppColors.lightblackColor),
+                                SizedBox(height:8),
+                                DescriptionTextWidget(text: ' My designs combine creativity with functionality for effective user experiences', textColor: AppColors.lightblackColor)
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
       Container(
         height: MediaQuery.of(context).size.height * 0.5,
