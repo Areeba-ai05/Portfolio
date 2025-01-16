@@ -423,7 +423,234 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
                 ],
               ),
             ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.9,
+              width: MediaQuery.of(context).size.width ,  // Adjusted width for proper scaling
+              decoration: BoxDecoration(
+                color: AppColors.whiteColor,
+              ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left:40,top: 28.0),//text padding
+                    child: NormalTextWidget(text: 'My Project', textColor:AppColors.backgroundColor),
+                  ),
+                  SizedBox(height: 02,),
+                  BlackTextHeading(text: 'What I have made?'),
+                  Padding(
+                    padding: const EdgeInsets.only(left:20.0,top:20,),//container padding
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 250 ,
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/fb1.jpg',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'Facebook Clone', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width:30 ,),
+                        Container(
+                          height: 250 ,
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/wa.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'What/sApp Full Clone', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width:30 ,),
+                        Container(
+                          height: 250 ,
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/gold.jpg',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'Gold App Calculator', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left:20.0,top:20,),//container padding
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 250 ,
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/count.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'Counter App', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width:30 ,),
+                        Container(
+                          height: 250 ,
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/port.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'Portfolio ', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width:30 ,),
+                        Container(
+                          height: 250 ,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: AppColors.bacckgroundColor,
+                            borderRadius: BorderRadius.circular(10.67),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Container(
+                                  height:200,
+                                  width: 280,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.67),
+                                    color:AppColors.bacckgroundColor,
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/App-images/todo.png',),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Divider(color: Colors.black,
+                                  thickness: 2,
+                                  height: 2),
+                              SizedBox(height: 10,),
+                              NormalTextWidget(text: 'ToDo Task App', textColor: AppColors.blackColor),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
 
+                ],
+              ),
+            ),
       Container(
         height: MediaQuery.of(context).size.height * 0.5,
         width: MediaQuery.of(context).size.width, // Full width
